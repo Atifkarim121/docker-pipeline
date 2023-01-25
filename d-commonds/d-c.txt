@@ -1,0 +1,10 @@
+image build :  sudo docker build -t imagename .dirlocation
+list image : sudo docker images
+container/test : sudo docker run -d -p port-local:docker image-name
+running container : sudo docker ps / (all process) :sudo docker ps -a
+delete images : sudo docker rmi image id
+start container : sudo docker start container id 
+stop container : sudo docker stop container id
+delete cont :sudo docker rm cont id  /(froce delete) -f
+
+
