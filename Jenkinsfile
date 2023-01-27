@@ -4,6 +4,7 @@ pipeline {
     stages {
         stage('build') {
             steps {
+                sh 'docker rmi dockerimage:1.0 -f'
                 sh 'docker build -t dockerimage:1.0 . '
             }
         }
