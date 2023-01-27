@@ -11,8 +11,8 @@ pipeline {
     
         stage('test') {
             steps {
-                sh 'docker stop c1 -f'
-                sh 'docker rm c1'
+                sh 'docker stop c1'
+                sh 'docker rm c1 -f'
                 sh 'docker run -d -p 8081:8081 --name c1 dockerimage:1.0 '
             }
         }
