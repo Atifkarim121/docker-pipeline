@@ -12,7 +12,7 @@ pipeline {
         stage('test') {
             steps {
                 
-                sh 'docker run -d -p 8081:8081 dockerimage:1.0 '
+                sh 'docker run -d -p 8081:8081 --name c1 dockerimage:1.0 '
             }
         }
     
